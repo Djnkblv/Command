@@ -8,6 +8,9 @@ CONFIG -= app_bundle
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+        light.cpp \
+        lightoffcommand.cpp \
+        lightoncommand.cpp \
         main.cpp \
         stereo.cpp \
         stereooffcommand.cpp \
@@ -19,6 +22,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
+    light.h \
+    lightoffcommand.h \
+    lightoncommand.h \
     stereo.h \
     stereooffcommand.h \
     stereooncommand.h
