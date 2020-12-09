@@ -1,11 +1,26 @@
-#ifndef CELINGFAN_H
-#define CELINGFAN_H
+#ifndef CEILINGFAN_H
+#define CEILINGFAN_H
 
+#include <QString>
+#include <iostream>
 
-class celingfan
-{
+using namespace std;
+
+class CeilingFan {
+protected:
+    int level;
+    static const int HIGH = 2;
+    static const int MEDIUM = 1;
+    static const int LOW = 0;
 public:
-    celingfan();
+    CeilingFan(QString location);
+    QString location;
+    void high();
+    void medium();
+    void low();
+    void off();
+    int getSpeed();
 };
 
-#endif // CELINGFAN_H
+
+#endif // CEILINGFAN_H

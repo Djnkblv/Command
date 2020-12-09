@@ -1,6 +1,9 @@
 #include "garagedooropencommand.h"
 
-garagedooropencommand::garagedooropencommand()
-{
+GarageDoorOpenCommand::GarageDoorOpenCommand(GarageDoor *gd) {
+    this->garageDoor = gd;
+}
 
+void GarageDoorOpenCommand::execute() {
+    garageDoor->up();
 }

@@ -1,11 +1,16 @@
 #ifndef HOTTUBOFFCOMMAND_H
 #define HOTTUBOFFCOMMAND_H
+#include "command.h"
+#include "hottub.h"
 
-
-class hottuboffcommand
+class HottubOffCommand : public Command
 {
+protected:
+    Hottub *hottub;
 public:
-    hottuboffcommand();
+    HottubOffCommand(Hottub*);
+    virtual void execute();
+
 };
 
 #endif // HOTTUBOFFCOMMAND_H

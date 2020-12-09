@@ -1,6 +1,6 @@
 #include "command.h"
 
-command::command()
+Command::Command()
 {
 
 }

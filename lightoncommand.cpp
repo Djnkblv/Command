@@ -1,6 +1,9 @@
 #include "lightoncommand.h"
 
-lightoncommand::lightoncommand()
-{
+LightOnCommand::LightOnCommand(Light *l) {
+    this->light = l;
+}
 
+void LightOnCommand::execute() {
+    light->on();
 }

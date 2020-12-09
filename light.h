@@ -1,11 +1,16 @@
 #ifndef LIGHT_H
 #define LIGHT_H
+#include <QString>
+#include <iostream>
 
+using namespace std;
 
-class light
-{
+class Light {
 public:
-    light();
+    Light(QString);
+    QString location;
+    void on();
+    void off();
 };
 
 #endif // LIGHT_H

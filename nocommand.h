@@ -2,10 +2,10 @@
 #define NOCOMMAND_H
 
 
-class nocommand
+class NoCommand
 {
 public:
-    nocommand();
+    NoCommand();
 };
 
 #endif // NOCOMMAND_H

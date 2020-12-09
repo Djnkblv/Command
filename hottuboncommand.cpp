@@ -1,6 +1,12 @@
 #include "hottuboncommand.h"
 
-hottuboncommand::hottuboncommand()
+HottubOnCommand::HottubOnCommand(Hottub *hottub)
 {
-
+    this->hottub = hottub;
+    this->name = "HottubOnCommand";
+}
+void HottubOnCommand::execute() {
+    hottub->on();
+    hottub->heat();
+    hottub->bubblesOn();
 }

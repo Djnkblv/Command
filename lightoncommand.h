@@ -1,11 +1,15 @@
 #ifndef LIGHTONCOMMAND_H
 #define LIGHTONCOMMAND_H
+#include "command.h"
+#include "light.h"
 
-
-class lightoncommand
+class LightOnCommand : public Command
 {
+protected:
+    Light *light;
 public:
-    lightoncommand();
+    LightOnCommand(Light*);
+    virtual void execute();
 };
 
 #endif // LIGHTONCOMMAND_H

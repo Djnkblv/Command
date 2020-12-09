@@ -1,11 +1,16 @@
-#ifndef CELINGFANOFFCOMMAND_H
-#define CELINGFANOFFCOMMAND_H
+#ifndef CEILINGFANOFFCOMMAND_H
+#define CEILINGFANOFFCOMMAND_H
 
 
-class celingfanoffcommand
-{
+#include "command.h"
+#include "celingfan.h"
+
+class CeilingFanOffCommand : public Command {
+protected:
+    CeilingFan *ceilingFan;
 public:
-    celingfanoffcommand();
+    CeilingFanOffCommand(CeilingFan*);
+    virtual void execute();
 };
 
-#endif // CELINGFANOFFCOMMAND_H
+#endif // CEILINGFANOFFCOMMAND_H

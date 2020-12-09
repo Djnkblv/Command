@@ -1,6 +1,10 @@
 #include "garagedoorclosecommand.h"
 
-garagedoorclosecommand::garagedoorclosecommand()
+GarageDoorCloseCommand::GarageDoorCloseCommand(GarageDoor *gd)
 {
+    this->garageDoor = gd;
 
+}
+void GarageDoorCloseCommand::execute() {
+    garageDoor->down();
 }

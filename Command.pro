@@ -23,9 +23,14 @@ SOURCES += \
         lightoncommand.cpp \
         main.cpp \
         nocommand.cpp \
+        remotecontrol.cpp \
+        simpleremotecontrol.cpp \
         stereo.cpp \
         stereooffcommand.cpp \
-        stereooncommand.cpp
+        stereooncommand.cpp \
+        tv.cpp \
+        tvoffcommand.cpp \
+        tvoncommand.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -47,6 +52,11 @@ HEADERS += \
     lightoffcommand.h \
     lightoncommand.h \
     nocommand.h \
+    remotecontrol.h \
+    simpleremotecontrol.h \
     stereo.h \
     stereooffcommand.h \
-    stereooncommand.h
+    stereooncommand.h \
+    tv.h \
+    tvoffcommand.h \
+    tvoncommand.h

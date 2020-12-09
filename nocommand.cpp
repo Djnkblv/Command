@@ -1,6 +1,6 @@
 #include "nocommand.h"
 
-nocommand::nocommand()
+NoCommand::NoCommand()
 {
 
 }

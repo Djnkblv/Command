@@ -1,11 +1,17 @@
+
 #ifndef STEREOONCOMMAND_H
 #define STEREOONCOMMAND_H
 
+#include "command.h"
+#include "stereo.h"
 
-class stereooncommand
+class StereoOnCommand : public Command
 {
+protected:
+    Stereo *stereo;
 public:
-    stereooncommand();
+    StereoOnCommand(Stereo*);
+    virtual void execute();
 };
 
 #endif // STEREOONCOMMAND_H

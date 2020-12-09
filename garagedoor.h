@@ -1,11 +1,21 @@
 #ifndef GARAGEDOOR_H
 #define GARAGEDOOR_H
 
+#include <QString>
+#include <iostream>
 
-class garagedoor
-{
+using namespace std;
+
+class GarageDoor {
+protected:
+    QString location;
 public:
-    garagedoor();
+    GarageDoor(QString location);
+    void up();
+    void down();
+    void stop();
+    void lightOn();
+    void lightOff();
 };
 
 #endif // GARAGEDOOR_H

@@ -1,11 +1,16 @@
 #ifndef GARAGEDOOROPENCOMMAND_H
 #define GARAGEDOOROPENCOMMAND_H
 
+#include "command.h"
+#include "garagedoor.h"
 
-class garagedooropencommand
+class GarageDoorOpenCommand : public Command
 {
+protected:
+    GarageDoor *garageDoor;
 public:
-    garagedooropencommand();
+    GarageDoorOpenCommand(GarageDoor*);
+    virtual void execute();
 };
 
 #endif // GARAGEDOOROPENCOMMAND_H
