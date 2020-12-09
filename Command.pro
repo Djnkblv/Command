@@ -9,6 +9,9 @@ CONFIG -= app_bundle
 
 SOURCES += \
         command.cpp \
+        hottub.cpp \
+        hottuboffcommand.cpp \
+        hottuboncommand.cpp \
         light.cpp \
         lightoffcommand.cpp \
         lightoncommand.cpp \
@@ -25,6 +28,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     command.h \
+    hottub.h \
+    hottuboffcommand.h \
+    hottuboncommand.h \
     light.h \
     lightoffcommand.h \
     lightoncommand.h \
