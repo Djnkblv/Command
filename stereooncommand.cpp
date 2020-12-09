@@ -1,10 +1,7 @@
-#include "stereooffcommand.h"
+#include "stereooncommand.h"
 
-StereoOffCommand::StereoOffCommand(Stereo *stereo)
+StereoOnCommand::StereoOnCommand(Stereo *stereo)
 {
     this->stereo = stereo;
-    this->name = "StereoOffCommand on " + stereo->location;
-}
-void StereoOffCommand::execute() {
-    stereo->off();
+    this->name = "StereoOnCommand" + stereo->location;
 }

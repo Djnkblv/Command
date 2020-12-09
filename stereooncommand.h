@@ -1,4 +1,3 @@
-
 #ifndef STEREOONCOMMAND_H
 #define STEREOONCOMMAND_H
 
