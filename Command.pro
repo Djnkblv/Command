@@ -12,6 +12,9 @@ SOURCES += \
         celingfan.cpp \
         celingfanoffcommand.cpp \
         command.cpp \
+        garagedoor.cpp \
+        garagedoorclosecommand.cpp \
+        garagedooropencommand.cpp \
         hottub.cpp \
         hottuboffcommand.cpp \
         hottuboncommand.cpp \
@@ -34,6 +37,9 @@ HEADERS += \
     celingfan.h \
     celingfanoffcommand.h \
     command.h \
+    garagedoor.h \
+    garagedoorclosecommand.h \
+    garagedooropencommand.h \
     hottub.h \
     hottuboffcommand.h \
     hottuboncommand.h \
